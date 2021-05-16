@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Вітрина</title>
+	<style>
+		/* Дефолтні стилі для всієї сторінки. Знімаємо дефолтні відступи */
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			height: 110px;
+			background-image: url("bg-header.jpg");
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+		}
+
+		/* Прописуємо стилі для списку */
+		ul {
+			display: flex;
+			/* ставимо в один рядок дочірні елементи списку */
+			width: 80%;
+			margin: auto;
+			justify-content: space-around;
+			/* розміщуємо елементи на однаковій відстані	 */
+			list-style: none;
+			/* забираємо дефолтні крапочки у елементів списку */
+			margin-top: 30px;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			/* забираємо дефолтне підкреслення тексту у посилань */
+			font-size: 20px;
+		}
+
+		.content {
+			width: 80%;
+			height: 1000px;
+			margin: auto;
+		}
+
+		.content-img {
+			text-align: center;
+			margin-top: 65px;
+			margin-bottom: 65px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Шапка сайту -->
+	<header class="header">
+		<h1>Мої проекти</h1>
+		<ul>
+			<li><a href="#hb">З днем народження!</a></li>
+			<li><a href="#front">Як стати веб-програмістом</a></li>
+			<li><a href="#list">Рецепт страви</a></li>
+			<li><a href="#about">Про мене</a></li>
+		</ul>
+	</header>
+	<!-- Кінець шапки -->
+	<!-- Обгортка для вього контенту на сайті -->
+	<div class="content">
+		<!-- Обгортака для картинки -->
+		<div class="content-img">
+			<!-- target="_blank" - дозволяє відкривати посилання у новому вікні -->
+			<a target="_blank" href="https://codeclub.com.ua/">
+				<img src="./cc_pnu.jpg">
+			</a>
+		</div>
+		<!-- Кінець обгортики для картинки -->
+		<div class="img">
+			<h2 id="hb">З днем народження!</h2>
+			<iframe src="https://trinket.io/embed/html/f59012723b" width="100%" height="600" frameborder="0"
+				marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+			<h2 id="front">Як стати веб-програмістом</h2>
+			<iframe src="https://trinket.io/embed/html/2860548cc4" width="100%" height="600" frameborder="0"
+				marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+			<h2 id="list">Рецепт страви</h2>
+			<iframe src="https://trinket.io/embed/html/482f20e97f" width="100%" height="600" frameborder="0"
+				marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+			<h2 id="about">Про мене</h2>
+			<iframe src="https://trinket.io/embed/html/7a66b329c6" width="100%" height="600" frameborder="0"
+				marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!-- Кінець обгортки для контенту -->
+</body>
+
+</html>
